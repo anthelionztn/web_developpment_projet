@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<TITLE>DaZiBao</TITLE>
+<script type="text/javascript" src="dazibao.js"></script>
+<script type="text/javascript" src="like.js"></script>
+
+<script>
+	
+function refresh(){
+	location.reload(false);  
+	}
+function submit(mes){
+	var xhr = new XMLHttpRequest(); 
+  	mes=document.getElementById("yourmessage").value;
+    mes=encodeURIComponent(mes); 
+  
+    var url="insert.php";
+	url=url+"?q="+mes;
+	xhr.open("GET",url,true);
+	xhr.send(null); 
+	alert("Your message has been posted, please click button refresh to refresh the web.");
+}
+</script>
+
+</HEAD>
+<BODY>
+<!--<FORM ACTION="http://www.med.univ-rennes1.fr/htbin/essai.pl" METHOD="POST"> /!-->
+
+<UL>
+
+<LI>
+Stage 1&nbsp;: <BR />
+<TEXTAREA Id="outputArea1" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like1" onclick="like1()">Like!</button>
+<div id="messages1"></div></br>
+</LI>
+
+<LI>
+Stage 2&nbsp;: <BR />
+<TEXTAREA Id="outputArea2" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like2" onclick="like2()">Like!</button>
+<div id="messages2"></div></br>
+</LI>
+
+<LI>
+Stage 3&nbsp;: <BR />
+<TEXTAREA Id="outputArea3" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like3" onclick="like3()">Like!</button>
+<div id="messages3"></div></br>
+</LI>
+
+<LI>
+Stage 4&nbsp;: <BR />
+<TEXTAREA Id="outputArea4" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like4" onclick="like4()">Like!</button>
+<div id="messages4"></div></br>
+</LI>
+
+<LI>
+Stage 5&nbsp;: <BR />
+<TEXTAREA Id="outputArea5" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like5" onclick="like5()">Like!</button>
+<div id="messages5"></div></br>
+</LI>
+
+<LI>
+Stage 6&nbsp;: <BR />
+<TEXTAREA Id="outputArea6" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like6" onclick="like6()">Like!</button>
+<div id="messages6"></div></br>
+</LI>
+
+<LI>
+Stage 7&nbsp;: <BR />
+<TEXTAREA Id="outputArea7" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like7" onclick="like7()">Like!</button>
+<div id="messages7"></div></br>
+</LI>
+
+<LI>
+Stage 8&nbsp;: <BR />
+<TEXTAREA Id="outputArea8" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like8" onclick="like8()">Like!</button>
+<div id="messages8"></div></br>
+</LI>
+
+<LI>
+Stage 9&nbsp;: <BR />
+<TEXTAREA Id="outputArea9" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like9" onclick="like9()">Like!</button>
+<div id="messages9"></div></br>
+</LI>
+
+<LI>
+Stage 10&nbsp;: <BR />
+<TEXTAREA Id="outputArea10" readonly ROWS="3" COLS="55"></TEXTAREA> </br>
+<button id="like10" onclick="like10()">Like!</button>
+<div id="messages10"></div></br>
+</LI>
+
+<LI>
+New message&nbsp;:<BR />
+<TEXTAREA Id="yourmessage" ROWS="3" COLS="55"></TEXTAREA>
+</LI>
+
+<button id="submit" onclick="submit()">Submit</button>
+<button id="refresh" onclick="refresh()">Refresh</button>
+
+<script>
+	document.getElementById("outputArea1").value=searche1();
+	document.getElementById("outputArea2").value=searche2();
+	document.getElementById("outputArea3").value=searche3();
+	document.getElementById("outputArea4").value=searche4();
+	document.getElementById("outputArea5").value=searche5();
+	document.getElementById("outputArea6").value=searche6();
+	document.getElementById("outputArea7").value=searche7();
+	document.getElementById("outputArea8").value=searche8();
+	document.getElementById("outputArea9").value=searche9();
+	document.getElementById("outputArea10").value=searche10();
+</script>
+
+</UL>
+</FORM>
+</BODY>
+</HTML>
